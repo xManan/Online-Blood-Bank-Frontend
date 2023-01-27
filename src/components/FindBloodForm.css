@@ -1,0 +1,23 @@
+.bg-trans-black {
+    background-color: rgba(0,0,0,0.5);
+    padding: 3rem 2rem;
+}
+
+.find-btn-container {
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .field-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-trans-black {
+        margin-bottom: 2rem;
+    }
+
+    .find-btn-container {
+        justify-content: center;
+    }
+}

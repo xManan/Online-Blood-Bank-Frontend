@@ -1,0 +1,26 @@
+.blood-section {
+    background-image: url('../public/background-1080p.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9.8rem 0;
+}
+
+.form-btn-container > * {
+    margin: 0 2rem;
+}
+
+.tag-line {
+    text-shadow: 1px 1px 6px black;
+}
+
+@media (max-width: 768px) {
+    .rounded-btn-container > * {
+        margin-bottom: 1rem;
+    }
+
+    .blood-section {
+        padding: 3rem 0;
+    }
+}

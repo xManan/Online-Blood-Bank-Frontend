@@ -1,0 +1,10 @@
+.blood-bank-container {
+    border: 1px solid grey;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+.blood-bank-container img {
+    aspect-ratio: 1:1;
+    width: 12rem;
+    margin-right: 2rem;
+}

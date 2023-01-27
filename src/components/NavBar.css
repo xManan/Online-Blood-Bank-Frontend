@@ -1,0 +1,23 @@
+/* xs: 0; */
+/* sm: 576px; */
+/* md: 768px; */
+/* lg: 992px; */
+/* xl: 1200px; */
+/* xxl: 1400px; */
+
+.navbar-nav .nav-link {
+    margin-right: 24px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) { 
+    .btn-center {
+        position: absolute;
+        top: 1.8rem;
+        left: 50%;
+        transform: translate(-10%);
+    }
+}
