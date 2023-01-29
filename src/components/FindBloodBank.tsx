@@ -23,6 +23,8 @@ function FindBloodBank() {
             </Form>
             <Container className="mb-5">
                 <BloodBankCard />
+                <BloodBankCard />
+                <BloodBankCard />
             </Container>
         </Container>
     )

@@ -1,0 +1,9 @@
+.about-us-container img {
+    width: 16rem;
+}
+
+@media (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,17 @@
+.blood-donor-container {
+    position: relative;
+    border: 1px solid grey;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+.blood-donor-container img {
+    aspect-ratio: 1:1;
+    width: 12rem;
+    margin-right: 2rem;
+}
+
+.donor-blood-group {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

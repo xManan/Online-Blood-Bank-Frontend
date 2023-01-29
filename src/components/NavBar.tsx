@@ -11,7 +11,7 @@ function NavBar() {
         <Navbar className="fixed-top" bg="light" expand="md">
             <Container>
                 <Link to="/" className="no-underline">
-                    <Navbar.Brand className="d-flex align-items-center">
+                    <Navbar.Brand className="d-flex align-items-center fs-4">
                         <img
                             alt=""
                             src="../../public/logo.png"

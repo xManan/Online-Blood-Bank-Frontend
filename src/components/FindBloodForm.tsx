@@ -11,13 +11,13 @@ function FindBloodForm() {
                 <Col>
                     <Form.Group className="mb-3">
                         <Form.Select id="disabledSelect">
-                            <option>Blood Group</option>
+                            <option>--Blood Group--</option>
                         </Form.Select>
                     </Form.Group>
                 </Col>
                 <Col>
                     <Form.Group className="mb-3">
-                        <Form.Select id="disabledSelect">
+                        <Form.Select id="disabledSelect" disabled>
                             <option>Select State</option>
                         </Form.Select>
                     </Form.Group>
@@ -26,15 +26,15 @@ function FindBloodForm() {
             <Row className="field-container">
                 <Col>
                     <Form.Group className="mb-3">
-                        <Form.Select id="disabledSelect">
+                        <Form.Select id="disabledSelect" disabled>
                             <option>Select District</option>
                         </Form.Select>
                     </Form.Group>
                 </Col>
                 <Col>
                     <Form.Group className="mb-3">
-                        <Form.Select id="disabledSelect">
-                            <option>All Tehsil</option>
+                        <Form.Select id="disabledSelect" disabled>
+                            <option>All Tehasil</option>
                         </Form.Select>
                     </Form.Group>
                 </Col>
