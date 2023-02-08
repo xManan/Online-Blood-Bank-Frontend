@@ -14,7 +14,7 @@ function AboutSection() {
                 </p>
             </div>
             <div className="blood-donation-img-container">
-                <img src="../../public/blood-donation.jpeg" />
+                <img src="/blood-donation.jpeg" />
             </div>
         </Container>
     )

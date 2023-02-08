@@ -18,10 +18,10 @@ function BloodSection() {
                         <p className="tag-line text-white text-center fs-4"><b>Donate Blood</b> Give The Gift Of Life</p>
                         <Row className="rounded-btn-container">
                             <Col className="d-flex justify-content-center">
-                                <RoundedBtn title="Request Blood" icon="../../public/drop-of-blood-96.png" color="red" />
+                                <RoundedBtn title="Request Blood" icon="/drop-of-blood-96.png" color="red" />
                             </Col>
                             <Col className="d-flex justify-content-center">
-                                <RoundedBtn title="Find Blood Donor" icon="../../public/customer-96.png" color="black" />
+                                <RoundedBtn title="Find Blood Donor" icon="/customer-96.png" color="black" />
                             </Col>
                         </Row>
                     </Col>

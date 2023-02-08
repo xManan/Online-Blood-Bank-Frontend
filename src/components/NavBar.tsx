@@ -14,7 +14,7 @@ function NavBar() {
                     <Navbar.Brand className="d-flex align-items-center fs-4">
                         <img
                             alt=""
-                            src="../../public/logo.png"
+                            src="/logo.png"
                             width="50"
                             height="70"
                             className="d-inline-block align-top"
@@ -26,19 +26,15 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav className="align-items-center">
                         <Link className="nav-link" to="/">HOME</Link>
-                        <NavDropdown title="BLOOD BANK" id="basic-nav-dropdown">
+                        <Link className="nav-link" to="/find-blood-bank">BLOOD BANK</Link>
+                        <NavDropdown title="BE A DONOR" id="basic-nav-dropdown">
                             <NavDropdown.Item>
-                                <Link to="/find-blood-bank">Find Blood Bank</Link>
+                                <Link to="/login">Login</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to="/register-blood-bank">Register</Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Link to="/login-blood-bank">Login</Link>
+                                <Link to="/register">Register</Link>
                             </NavDropdown.Item>
                         </NavDropdown>
-
-                        <Link className="nav-link" to="/be-a-donor">BE A DONOR</Link>
                         <Link className="nav-link" to="/find-donor">FIND DONOR</Link>
                         <Link className="nav-link" to="/about-us">ABOUT US</Link>
                     </Nav>

@@ -1,25 +1,27 @@
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import { Link } from 'react-router-dom'
-import './BeDonor.css'
+import './RegisterDonor.css'
 
-function BeDonor() {
+function RegisterDonor() {
     return (
-        <Container className="p-5">
-            <Row>
-                <Col className="p-4">
+        <Container className="py-4 d-flex">
+                <Container className="py-4">
                     <h1>Be A Donor</h1>
                     <br />
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Control type="email" placeholder="Full Name" />
                         </Form.Group>
-
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Control type="password" placeholder="Mobile No" />
+                            <Form.Control type="text" placeholder="Mobile No" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control type="email" placeholder="E-mail" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Select>
@@ -46,16 +48,15 @@ function BeDonor() {
                             <Button variant="danger" type="submit" >
                                 Submit
                             </Button>
-                            <Link to="/already-a-donor" className="mx-4">Already a donor ?</Link>
+                            <Link to="/login" className="mx-4">Already a donor ?</Link>
                         </div>
                     </Form>
-                </Col>
-                <Col className="p-4">
-                    <img src="../../public/donor-art.jpeg" />
-                </Col>
-            </Row>
+                </Container>
+                <Container className="be-donor-img d-flex align-items-center">
+                    <img className="mx-4" src="/donor-art.jpeg" />
+                </Container>
         </Container>
     )
 }
 
-export default BeDonor
+export default RegisterDonor

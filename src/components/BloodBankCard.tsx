@@ -4,7 +4,7 @@ import './BloodBankCard.css'
 function BloodBankCard() {
     return (
         <Container className="blood-bank-container d-flex align-items-center">
-            <img src="../../public/logo.png" />
+            <img src="/logo.png" />
             <Container>
                 <h2>1. Blood Bank</h2>
                 <p>Address</p>

@@ -5,7 +5,7 @@ function BloodDonorCard() {
     return (
         <Container className="blood-donor-container d-flex align-items-center">
             <span className="donor-blood-group bg-danger text-white fs-4 p-2">A+</span>
-            <img src="../../public/logo.png" />
+            <img src="/logo.png" />
             <Container>
                 <h2>Blood Donor</h2>
                 <p>City</p>

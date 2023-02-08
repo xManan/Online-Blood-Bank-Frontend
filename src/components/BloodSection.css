@@ -1,5 +1,5 @@
 .blood-section {
-    background-image: url('../public/background-1080p.jpeg');
+    background-image: url('/background-1080p.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

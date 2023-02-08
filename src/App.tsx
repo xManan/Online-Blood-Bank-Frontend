@@ -5,9 +5,21 @@ import NotFound from './components/NotFound'
 import FindBloodBank from './components/FindBloodBank'
 import FindDonor from './components/FindDonor'
 import AboutUs from './components/AboutUs'
-import BeDonor from './components/BeDonor'
-import { Routes, Route } from 'react-router-dom'
+import RegisterDonor from './components/RegisterDonor'
+import LoginDonor from './components/LoginDonor'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
+
+import { useLayoutEffect } from 'react'
+
+const Wrapper = (props: any) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+        document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return props.children
+}
+
 
 function App() {
     return (
@@ -17,14 +29,17 @@ function App() {
             <br />
             <br />
             <br />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/find-blood-bank' element={<FindBloodBank />} />
-                <Route path='/find-donor' element={<FindDonor />} />
-                <Route path='/about-us' element={<AboutUs />} />
-                <Route path='/be-a-donor' element={<BeDonor />} />
-                <Route path='/*' element={<NotFound />} />
-            </Routes>
+            <Wrapper>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/find-blood-bank' element={<FindBloodBank />} />
+                    <Route path='/find-donor' element={<FindDonor />} />
+                    <Route path='/about-us' element={<AboutUs />} />
+                    <Route path='/register' element={<RegisterDonor />} />
+                    <Route path='/login' element={<LoginDonor />} />
+                    <Route path='/*' element={<NotFound />} />
+                </Routes>
+            </Wrapper>
             <Footer />
         </>
     )
