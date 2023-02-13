@@ -3,8 +3,19 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import BloodBtn from './BloodBtn'
 import './TotalDonors.css'
+import { useNavigate } from 'react-router-dom'
 
 function TotalDonors() {
+    const navigate = useNavigate()
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        navigate('/find-donor', {
+            state: {
+                blood: e.currentTarget.value,
+                state: '',
+                city: '',
+            }
+        })
+    }
     return (
         <div className="total-donors-section">
             <Container className="text-center">
@@ -16,30 +27,30 @@ function TotalDonors() {
                 <Container>
                     <Row>
                         <Col>
-                            <BloodBtn blood-grp="A-" count={121} />
+                            <BloodBtn blood-grp="A-" count={121} handleClick={handleClick} />
                         </Col>
                         <Col>
-                            <BloodBtn blood-grp="A+" count={72} />
+                            <BloodBtn blood-grp="A+" count={72} handleClick={handleClick} />
                         </Col>
                         <Col>
-                            <BloodBtn blood-grp="AB+" count={90} />
+                            <BloodBtn blood-grp="AB+" count={90} handleClick={handleClick} />
                         </Col>
                         <Col>
-                            <BloodBtn blood-grp="AB-" count={170} />
+                            <BloodBtn blood-grp="AB-" count={170} handleClick={handleClick} />
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <BloodBtn blood-grp="B-" count={68} />
+                            <BloodBtn blood-grp="B-" count={68} handleClick={handleClick} />
                         </Col>
                         <Col>
-                            <BloodBtn blood-grp="B+" count={227} />
+                            <BloodBtn blood-grp="B+" count={227} handleClick={handleClick} />
                         </Col>
                         <Col>
-                            <BloodBtn blood-grp="O-" count={20} />
+                            <BloodBtn blood-grp="O-" count={20} handleClick={handleClick} />
                         </Col>
                         <Col>
-                            <BloodBtn blood-grp="O+" count={11} />
+                            <BloodBtn blood-grp="O+" count={11} handleClick={handleClick} />
                         </Col>
                     </Row>
                 </Container>

@@ -3,12 +3,13 @@ import './BloodBtn.css'
 
 export interface BloodBtnProps {
     'blood-grp': string,
-    'count': number,
+    count: number,
+    handleClick: React.MouseEventHandler<HTMLButtonElement>
 }
 
 function BloodBtn(props: BloodBtnProps) {
     return (
-        <Button variant="danger" className="blood-btn">
+        <Button value={props['blood-grp']} variant="danger" className="blood-btn" onClick={props.handleClick}>
             <h1>{props['blood-grp']}</h1>
             <p>{props.count}</p>
         </Button>
