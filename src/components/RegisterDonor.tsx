@@ -47,7 +47,7 @@ function RegisterDonor() {
             city,
             pincode,
         }
-        const response = await fetch("http://localhost:6969/api/register-donor", {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/register-donor`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

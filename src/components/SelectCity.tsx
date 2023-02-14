@@ -16,7 +16,7 @@ function SelectCity(props: SelectCityProps) {
             setLoading(false)
             return
         }
-        fetch(`http://localhost:6969/api/cities/${props.state}`)
+        fetch(`${import.meta.env.VITE_API_BASE_URL}/cities/${props.state}`)
             .then((response) => response.json())
             .then((data) => { 
                 setCities(data.cities) 

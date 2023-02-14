@@ -1,3 +1,4 @@
+import dotenv from 'dotenv'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Footer from './components/Footer'
@@ -9,8 +10,9 @@ import RegisterDonor from './components/RegisterDonor'
 import LoginDonor from './components/LoginDonor'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
-
 import { useLayoutEffect } from 'react'
+
+// dotenv.config()
 
 const Wrapper = (props: any) => {
     const location = useLocation();

@@ -14,7 +14,7 @@ function SelectState(props: SelectStateProps) {
         console.log("fd")
         setLoading(true)
         try{
-            let response = await fetch("http://localhost:6969/api/states")
+            let response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/states`)
             if (response.status >= 200 && response.status <= 299) {
                 let data = await response.json()
                 setStates(data.states.map((state: { _id: any, state: string }) => state.state))

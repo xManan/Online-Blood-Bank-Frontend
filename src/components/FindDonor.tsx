@@ -27,7 +27,8 @@ function FindDonor() {
         }
         setSearching(true)
         const query = { blood_grp: blood, state, city }
-        const response = await fetch("http://localhost:6969/api/find-donors", {
+        // console.log(import.meta.env.VITE_API_BASE_URL)
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/find-donors`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
