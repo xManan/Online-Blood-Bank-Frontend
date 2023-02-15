@@ -21,7 +21,7 @@ function SelectState(props: SelectStateProps) {
             }
             setLoading(false)
         } catch(e) {
-            console.log("oops!")
+            console.log("oops!"+e)
             setLoading(false)
         }
     }
