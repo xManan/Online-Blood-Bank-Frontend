@@ -39,7 +39,7 @@ function FindBloodBank() {
                     <Button variant="danger" type="button" onClick={handleClick} className="px-4 py-2">Search</Button>
             </Form>
             <Container className="mb-5">
-                {banks.map((bank, idx) => (
+                {banks.map((bank: {name: string, address: string , city: string, state: string, pincode: string, email: string, mobile: string}, idx) => (
                     <BloodBankCard 
                         idx={idx+1}
                         name={bank.name} 
